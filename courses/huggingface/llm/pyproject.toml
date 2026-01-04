@@ -1,0 +1,14 @@
+[project]
+name = "llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "transformers[sentencepiece]>=4.57.0",
+]
+
+[dependency-groups]
+notebook = [
+    "ipykernel>=6.30.1",
+]
