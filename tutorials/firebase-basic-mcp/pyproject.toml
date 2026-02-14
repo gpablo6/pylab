@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "firebase-basic-mcp"
+version = "0.1.0"
+description = "Codebase develop during the tutorial"
+authors = ["Giancarlo P"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mcp = {extras = ["cli"], version = "^1.9.4"}
+gql = {extras = ["all"], version = "^3.5.3"}
+python-dotenv = "^1.1.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.4.1"
+pytest-asyncio = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

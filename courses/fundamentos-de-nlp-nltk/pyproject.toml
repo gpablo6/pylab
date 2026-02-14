@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "foundations-nlp-nltk"
+version = "0.1.0"
+description = "Dependencies for running the examples and homeworks for the course"
+authors = ["Giancarlo P"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+nltk = "^3.9.1"
+matplotlib = "^3.10.0"
+numpy = "^2.2.2"
+
+
+[tool.poetry.group.notebooks.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
